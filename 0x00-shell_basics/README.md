@@ -17,3 +17,6 @@ Note: before the sentencen .2-bring_me_home to execute, use source: source .2-br
 
 Display current directory contents in a long format
 
+## 4-listmorefiles
+
+Display current  directory contents, including hidden files (starting with .) in a long format
