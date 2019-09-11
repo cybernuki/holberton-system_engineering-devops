@@ -38,4 +38,9 @@ Move the file "betty" from /tmp/ to /tmp/holberton
 
 ## 8-firstdelete
 
-Delet the file betty in /tmp/holberton
+Delete the file betty in /tmp/holberton
+
+## 9-firstdirdeletion
+
+Delete the directory "holberton" that is in the /tmp directory
+
