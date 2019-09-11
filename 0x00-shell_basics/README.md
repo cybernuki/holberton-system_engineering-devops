@@ -12,3 +12,8 @@ Display the contents list of your current directory
 
 Changes the working directory to the user's home directory. 
 Note: before the sentencen .2-bring_me_home to execute, use source: source .2-bring_me_home
+
+## 3-listfiles
+
+Display current directory contents in a long format
+
