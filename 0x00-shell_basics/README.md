@@ -28,3 +28,7 @@ Display current directory contents:
 	with user and group IDs displayed numerically
 	And hidden files (starting with .)
 
+## 6-firstdirectory
+
+Create a directory named "holberton" in /tmp/ directory
+
