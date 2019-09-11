@@ -1,5 +1,3 @@
-# Scrypts description
-
 ## 0-current_working 
 
 Prints the absolute path name of the ucrrent working directory
@@ -55,4 +53,8 @@ List all files (even ones with names beginning with a period character, wich are
 ## 12-file_type
 
 Prints the type of the file name iamfile. The file iamafile will be in the /tmp directory
+
+## 13-symbolic_link
+
+Create a symbolic link to /bin/ls, named __ls__.
 
