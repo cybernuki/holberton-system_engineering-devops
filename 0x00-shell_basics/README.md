@@ -32,3 +32,6 @@ Display current directory contents:
 
 Create a directory named "holberton" in /tmp/ directory
 
+## 7-movethatfile
+
+Move the file "betty" from /tmp/ to /tmp/holberton
