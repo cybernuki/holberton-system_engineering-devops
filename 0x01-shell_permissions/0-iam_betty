@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo usermod -l vagrant betty
+su betty
