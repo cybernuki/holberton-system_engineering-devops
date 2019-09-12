@@ -1,0 +1,40 @@
+echo '#!/bin/bash' >> 0-iam_betty
+echo '#!/bin/bash' >> 1-who_am_i
+echo '#!/bin/bash' >> 2-groups
+echo '#!/bin/bash' >> 3-new_owner
+echo '#!/bin/bash' >> 4-empty
+echo '#!/bin/bash' >> 5-execute
+echo '#!/bin/bash' >> 6-multiple_permissions
+echo '#!/bin/bash' >> 7-everybody
+echo '#!/bin/bash' >> 8-James_Bond
+echo '#!/bin/bash' >> 9-John_Doe
+echo '#!/bin/bash' >> 10-mirror_permissions
+echo '#!/bin/bash' >> 11-directories_permissions
+echo '#!/bin/bash' >> 12-directory_permissions
+echo '#!/bin/bash' >> 13-change_group
+echo '#!/bin/bash' >> 14-change_owner_and_group
+echo '#!/bin/bash' >> 15-symbolic_link_permissions
+echo '#!/bin/bash' >> 16-if_only
+echo '#!/bin/bash' >> 100-Star_Wars
+echo '#!/bin/bash' >> 101-man_holberton
+echo '*~' >> .gitignore
+touch README.md
+chmod u+x 0-iam_betty
+chmod u+x 1-who_am_i
+chmod u+x 2-groups
+chmod u+x 3-new_owner
+chmod u+x 4-empty
+chmod u+x 5-execute
+chmod u+x 6-multiple_permissions
+chmod u+x 7-everybody
+chmod u+x 8-James_Bond
+chmod u+x 9-John_Doe
+chmod u+x 10-mirror_permissions
+chmod u+x 11-directories_permissions
+chmod u+x 12-directory_permissions
+chmod u+x 13-change_group
+chmod u+x 14-change_owner_and_group
+chmod u+x 15-symbolic_link_permissions
+chmod u+x 16-if_only
+chmod u+x 100-Star_Wars
+chmod u+x 101-man_holberton
