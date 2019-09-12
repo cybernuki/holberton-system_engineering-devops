@@ -58,3 +58,31 @@ Prints the type of the file name iamfile. The file iamafile will be in the /tmp 
 
 Create a symbolic link to /bin/ls, named __ls__.
 
+## 14-copy_html
+
+Copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did no exit in the parent of the working directory or were never than the version in the parent of the working directory.
+
+## 15-lets_move
+
+Moves all files beginning with an uppercase letter to the directory /tmp/u
+
+## 16-clean_emacs
+
+Deletes all files in the current working directory that end with the character ~ 
+
+## 17-tree
+
+Creates the directories welcome/, welcome/to, and welcome/to/holberon in the current directory. But only, using less than two spaces in the script
+
+## 18-commas 
+
+List all the files and directories of the current directory, separated by commas(,).
+
+     Directory names end with a slash (/)
+     Files and directories starting with a dot (.) are listed.
+
+## 19 File type: Holberton
+
+A magic fil holberton.mgc that can be used with the command file to detect Holberton data files. Holberton data files always contain the string HOLBERTON at offset 0
+
+ 
