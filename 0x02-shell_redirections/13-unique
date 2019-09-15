@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -u | ls -1
+sort | uniq -u| ls -1
