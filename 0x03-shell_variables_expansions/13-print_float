@@ -1,1 +1,2 @@
 #!/bin/bash
+NUM= $(printf "0.2f\n" $NUM)
