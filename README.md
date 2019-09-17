@@ -1,1 +1,1 @@
-In this repo I did my first steps writing bash scrypts
+In this repository I did my first steps writing bash scrypts
