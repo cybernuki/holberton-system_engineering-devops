@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# It displays all active IPv4 IPs on the machine it's executed on.
+
+nc -l localhost 98
