@@ -5,6 +5,6 @@ file {'holberton':
   mode    => '0744',
   content => 'I love Puppet',
   owner   => 'www-data',
-  group  => 'www-data',
+  group   => 'www-data',
   path    => '/tmp/holberton',
 }
