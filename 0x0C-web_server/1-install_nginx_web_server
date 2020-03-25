@@ -10,6 +10,15 @@ sudo apt-get install -y nginx
 
 sudo ufw allow 'Nginx HTTP'
 
-sudo echo "Holberton School" > /var/www/html/index.nginx-debian.html
+sudo mkdir -p /var/www/html/
+sudo echo "Holberton School" | sudo tee /var/www/html/index.html
+
+sudo printf %s "server {
+     listen      80 default_server;
+     listen      [::]:80 default_server;
+     root        /var/www/html;
+     index       index.html index.htm;
+}
+" | sudo tee /etc/nginx/sites-available/default
 
 sudo service nginx restart
