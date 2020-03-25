@@ -5,21 +5,9 @@
 #++    at the root with a curl GET request.
 
 # Instalation of the nginx server
-sudo apt-get -y update
-sudo apt-get -y install nginx
+apt-get update
+apt-get install -y nginx
 
-sudo ufw allow 'Nginx HTTP'
+eecho "Holberton School" > /var/www/html/index.nginx-debian.html
 
-sudo mkdir -p /var/www/html/index.html
-sudo touch /var/www/html/index.html
-sudo echo "Holberton School" > /var/www/html/index.html
-
-sudo printf %s "server {
-     listen      80 default_server;
-     listen      [::]:80 default_server;
-     root        /var/www/html/;
-     index       index.html index.htm;
-}
-" > /etc/nginx/sites-available/default
-
-sudo service nginx restart
+service nginx restart
