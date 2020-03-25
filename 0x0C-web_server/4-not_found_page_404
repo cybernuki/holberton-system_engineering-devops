@@ -29,7 +29,6 @@ sudo printf %s "server {
       root /var/www/html;
       internal;
     }
-    }
 }
 " | sudo tee /etc/nginx/sites-available/default
 
