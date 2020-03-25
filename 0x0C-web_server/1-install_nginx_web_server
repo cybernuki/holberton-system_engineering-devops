@@ -10,8 +10,5 @@ sudo apt-get install -y nginx
 
 sudo ufw allow 'Nginx HTTP'
 
-sudo makdir -p 
-sudo echo "Holberton School" > /var/www/html/index.nginx-debian.html
-
-
+sudo echo "Holberton School" | /var/www/html/index.nginx-debian.html
 sudo service nginx restart
