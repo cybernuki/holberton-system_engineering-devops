@@ -11,7 +11,7 @@ sudo apt-get install -y nginx
 sudo ufw allow 'Nginx HTTP'
 
 sudo mkdir -p /var/www/html/
-sudo echo "Holberton School" | sudo tee /var/www/html/index.html
+sudo echo "Holberton School for the win!" | sudo tee /var/www/html/index.html
 
 sudo printf %s "server {
      listen      80 default_server;
