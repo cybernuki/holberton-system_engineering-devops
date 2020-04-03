@@ -8,8 +8,8 @@ sudo printf %s "listen http-in
         bind *:80
         mode http
         balance roundrobin
-        server gc-1171-web-01-1584941124 35.243.229.224:80
-        server 1171-web-02 34.229.175.198:80
+        server  1164-web-01 54.158.45.251:80 check
+        server 1164-web-02 100.24.7.183:80 check
 " | sudo tee /etc/haproxy/haproxy.cfg
 
 sudo service haproxy restart
