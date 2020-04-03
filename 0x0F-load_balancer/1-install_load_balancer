@@ -4,9 +4,11 @@
 sudo apt-get update
 sudo apt-get -y install haproxy=2.0.\*
 
-sudo printf %s "listen http-in
+sudo printf %s "frontend front
         bind *:80
         mode http
+	default_backend back
+backend back
         balance roundrobin
         server  1164-web-01 54.158.45.251:80 check
         server 1164-web-02 100.24.7.183:80 check
