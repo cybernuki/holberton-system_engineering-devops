@@ -1,0 +1,1 @@
+adding a easy setting up of a nginx web server and a load balancer
