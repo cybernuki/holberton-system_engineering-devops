@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Subdomains verifier
 
 domain_information() {
