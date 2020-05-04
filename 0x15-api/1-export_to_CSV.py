@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # This script get the todo list from a given userId
+import csv
 import requests
 from sys import argv
 
@@ -8,7 +9,7 @@ TODOS_SOURCE = 'https://jsonplaceholder.typicode.com/todos?userId={}'
 
 USERS_SOURCE = 'https://jsonplaceholder.typicode.com/users/{}'
 
-EXPORT_LINE_TEMPLATE = '\"{}\",\"{}\",\"{}\",\"{}\"\n'
+EXPORT_LINE_TEMPLATE = '\"{}\",\"{}\",\"{}\",\"{}\"'
 
 FILE = './{}.csv'
 
@@ -26,7 +27,7 @@ def consume(id):
     return {'usr_data': usr_response.json(), 'usr_todos': tds_response.json()}
 
 
-def export(data):
+def export(data, id):
     usr_name = data.get('usr_data').get('name')
     usr_todos = data.get('usr_todos')
 
@@ -34,18 +35,18 @@ def export(data):
         print("Some values are None")
         return None
 
-    with open(FILE.format(id), 'a+', encoding='UTF-8') as file:
+    with open(FILE.format(id), 'w', newline="") as file:
+        writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         for task in usr_todos:
-            file.writelines(EXPORT_LINE_TEMPLATE.format(id,
-                                                        usr_name,
-                                                        task.get('completed'),
-                                                        task.get('title')))
+            completed = task.get('completed')
+            tittle = task.get('title')
+            writer.writerow([id, usr_name, completed, tittle])
 
 
 def main(id):
     if not id:
         return None
-    export(consume(id))
+    export(consume(id), id)
 
 
 if __name__ == "__main__":
