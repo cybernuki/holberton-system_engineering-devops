@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 # This script get the todo list from a given userId
-import requests
 from sys import argv
+import requests
+
 
 
 TODOS_SOURCE = 'https://jsonplaceholder.typicode.com/todos?userId={}'
