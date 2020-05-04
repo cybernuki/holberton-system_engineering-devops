@@ -9,9 +9,8 @@ TODOS_SOURCE = 'https://jsonplaceholder.typicode.com/todos?userId={}'
 
 USERS_SOURCE = 'https://jsonplaceholder.typicode.com/users/{}'
 
-EXPORT_LINE_TEMPLATE = '\"{}\",\"{}\",\"{}\",\"{}\"'
 
-FILE = './{}.csv'
+FILE = '{}.csv'
 
 
 def consume(id):
