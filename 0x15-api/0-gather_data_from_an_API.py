@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # This script get the todo list from a given userId
-from sys import argv
 import requests
+from sys import argv
 
 
 TODOS_SOURCE = 'https://jsonplaceholder.typicode.com/todos?userId={}'
@@ -14,6 +14,15 @@ N_LINES_TEMPLATE = '\t {}'
 
 
 def consume(id):
+	"""
+		This function consume from the api to search the
+		User information and their todos
+
+		id: Is the id of the user
+		Return a dictionary with two keys:
+		'usr_data': Contains a dictionary with the user information
+		'usr_todo': contains a list of dictionaries with todos information
+	"""
     user_request = USERS_SOURCE.format(id)
     todos_request = TODOS_SOURCE.format(id)
 
@@ -28,6 +37,9 @@ def consume(id):
 
 
 def display(data):
+	"""
+		This function display user information and their todos
+	"""
     user_name = data.get('usr_data').get('name')
     user_todos = data.get('usr_todos')
 
@@ -45,7 +57,9 @@ def display(data):
 
 
 def main(id):
-
+	"""
+		Main function
+	"""
     if not id:
         return None
     display(consume(id))
