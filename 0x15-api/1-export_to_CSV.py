@@ -27,7 +27,7 @@ def consume(id):
 
 
 def export(data, id):
-    usr_name = data.get('usr_data').get('name')
+    usr_name = data.get('usr_data').get('username')
     usr_todos = data.get('usr_todos')
 
     if not usr_name or not usr_todos:
