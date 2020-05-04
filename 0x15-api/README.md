@@ -1,0 +1,1 @@
+Consuming resources from an fake API
