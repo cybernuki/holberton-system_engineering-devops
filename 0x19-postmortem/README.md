@@ -12,11 +12,11 @@ Not solved
 ## :page_facing_up: Issue Summary:
 An issue was detected today at 7:35 pm. The game is done when the player reach the boss and keep touched space (attack action) button.  This made the player loose the game even with its full life and without hurts the boss. The root cause appears to be the boss' reach system that find the location of the player. Also, it appears to be related with the event pool designed who hasn't a restriction to deal with pressed keys.
 ## :clock930: Timeline:
-05/24 7:30 pm -  I ran the game program
-05/24 7:31 pm - I created a new match
-05/24 7:33 pm - I reach the boss without being hurt
-05/24 7:34 pm - I keep pressed space button to attack
-05/24 7:35 pm - Game over alert appears and game is closed.
+05/24 7:30 pm -  I ran the game program. <br>
+05/24 7:31 pm - I created a new match. <br>
+05/24 7:33 pm - I reach the boss without being hurt. <br>
+05/24 7:34 pm - I keep pressed space button to attack. <br>
+05/24 7:35 pm - Game over alert appears and game is closed. <br>
 ## :bug: Root Cause:
 After some input tests and debbuging, I found that the error happens due the research function that allows the monster get the player. As the function set boss' direction and then move n pixels, there are some directions that basically broke the logic of the setting. Moreover, due keeping pressed the space button is not controlled by a timer, this causes that even if the player is in front of the boss, systems do evaluations in a states where boss moves even if the logic says that is not allowed to move.
 ## :bar_chart: Preventive Measure:
