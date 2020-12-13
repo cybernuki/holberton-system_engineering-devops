@@ -39,5 +39,5 @@ def count_words(subreddit, word_list, after='', words_counting={}):
         iterator = sorted(words_counting.items(),
                         key=lambda kv: (-kv[1], kv[0]))
         for key, value in iterator:
-            print('{}: {}'.format(key, value))
+            print('{}: {}'.format(key.lower(), value))
 
